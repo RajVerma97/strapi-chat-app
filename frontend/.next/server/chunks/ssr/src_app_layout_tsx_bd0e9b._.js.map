@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/rajneeshverma/Desktop/web-dev/strapi-chat-app/frontend/src/app/layout.tsx"],"sourcesContent":["// import QueryClientProviderWrapper from \"@/components/QueryClientProviderWrapper\";\nimport QueryClientProviderWrapper from \"@/components/QueryClientProviderWrapper\";\nimport \"./globals.css\";\n\nimport { AxiosProvider } from \"@/hooks/use-axios-context\";\n\nexport default function RootLayout({\n  children,\n}: Readonly<{\n  children: React.ReactNode;\n}>) {\n  return (\n    <html lang=\"en\">\n      <QueryClientProviderWrapper>\n        <AxiosProvider>\n          <body>{children}</body>\n        </AxiosProvider>\n      </QueryClientProviderWrapper>\n    </html>\n  );\n}\n"],"names":[],"mappings":"AAAA,oFAAoF;;;;;AACpF;AAGA;;;;;AAEe,SAAS,WAAW,EACjC,QAAQ,EAGR;IACA,qBACE,8OAAC;QAAK,MAAK;kBACT,cAAA,8OAAC,gJAAA,CAAA,UAA0B;sBACzB,cAAA,8OAAC,wIAAA,CAAA,gBAAa;0BACZ,cAAA,8OAAC;8BAAM;;;;;;;;;;;;;;;;;;;;;AAKjB"}},
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
