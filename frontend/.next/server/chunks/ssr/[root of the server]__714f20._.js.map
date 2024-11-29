@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 119, "column": 0}, "map": {"version":3,"sources":["file:///Users/rajneeshverma/Desktop/web-dev/echo-chat-app/frontend/src/socket-io.ts"],"sourcesContent":["import { io } from \"socket.io-client\";\n\nif (!process.env.NEXT_PUBLIC_BACKEND) {\n  throw new Error(\"NEXT_PUBLIC_BACKEND environment variable is not defined\");\n}\n\nconst socket = io(\"http://localhost:1337\", {\n  transports: [\"websocket\", \"polling\"],\n  withCredentials: true,\n  path: \"/socket.io/\",\n  reconnectionAttempts: 5,\n  reconnectionDelay: 1000,\n  secure: true,\n});\n// socket.on(\"connect\", () => {\n//   console.log(\"Socket connected:\", socket.id);\n// });\n\n// socket.on(\"connect_error\", (error) => {\n//   console.error(\"Connection Error:\", error);\n// });\n\nexport default socket;\n"],"names":[],"mappings":";;;AAAA;AAAA;;AAEA,uCAAsC;;AAEtC;AAEA,MAAM,SAAS,CAAA,GAAA,wLAAA,CAAA,KAAE,AAAD,EAAE,yBAAyB;IACzC,YAAY;QAAC;QAAa;KAAU;IACpC,iBAAiB;IACjB,MAAM;IACN,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;AACV;uCASe"}},
+    {"offset": {"line": 140, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 146, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 150, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 161, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
+    {"offset": {"line": 161, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
