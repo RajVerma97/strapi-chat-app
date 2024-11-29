@@ -81,12 +81,7 @@ function ChatRoom({ username, id }) {
         .catch((e) => console.log(e.message));
     });
   }, [username]);
-  // useEffect(() => {
-  //   io.on("message", (data) => {
-  //     setMessages((msg) => [...msg, data]);
-  //     console.log("message", messages);
-  //   });
-  // }, [users]);
+
   const sendMessage = (message) => {
     if (message) {
       io.emit("sendMessage", { message, user: username }, (error) => {

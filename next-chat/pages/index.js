@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <form className={styles.main}>
-        <h1>Login</h1>
+        <h1>Login YES</h1>
         <label htmlFor="user">Username: </label>
         <input
           type="text"
