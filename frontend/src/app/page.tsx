@@ -67,7 +67,7 @@ export default function Home() {
     logout();
   };
 
-  // const joinOrCreateRoomMutation = useJoinOrCreateRoomMutation({
+  // const joinOrCrepateRoomMutation = useJoinOrCreateRoomMutation({
   //   onSuccess: (data) => {
   //     console.log("success", data);
   //   },
@@ -92,7 +92,7 @@ export default function Home() {
 
   return (
     <div className="p-4">
-      <h1 className="text-xl font-bold">Chat Application</h1>
+      <h1 className="text-xl font-bold">Chat Application 2</h1>
 
       <h1>List of users</h1>
 
